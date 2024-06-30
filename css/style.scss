@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "Newcomen";
+    src: url("../NewcomenRegular/font.woff") format('woff');
+  }
+
+$body-bg: black;
+$tangerine: #FFBB25;
+$lt-smoke-grey: #D8D2C3;
+$md-grey: #AEAEAE;
+$dk-smoke-grey: #55534C;
+
+$h1-font: "Mrs Saint Delafield";
+$display-font: "Newcomen";
+$h3-font: "Bellefair";
+$p-font: "Iowan Old Style";
+
+/* font-size:calc(12px + 1.5vw); */
+$h1-size: 5.3vw;
+$h2-size: 2.7vw;
+$h3-size: 2.5vw;
+$h4-size: 1.9vw;
+$h5-size: 2vw;
+$nav-size: 1.3em;
+$p-size: 1em;
+$sm-P-size: 0.9em;
+$img-fill: 100%;
+
+$container-top-pad: 5vh;
+
+$link-hover-color: $md-grey;
+
+
+$accordion-button-active-color:           shade-color($dk-smoke-grey, 10%);
+
+body {
+    background-color: $body-bg;
+    padding: 0px 75px 0px 75px;
+    font-family: $p-font;
+    color: $lt-smoke-grey;
+    font-size: $p-size;
+}
+
+h1 {
+    color: $tangerine;
+    font-family: $h1-font;
+    font-size: $h1-size;
+    font-style: normal;
+    font-weight: 400;
+/*     line-height: 80%; /* 96px */ 
+    text-align: center;
+}
+h2 {
+    color: white;
+    font-family: $display-font;
+    font-size: $h2-size;
+    font-style: normal;
+    display: inline;
+/*     line-height: 0%; */
+    overflow-wrap: break-word;
+}
+
+h3 {
+    color: $tangerine;
+    font-family: $h3-font;
+    font-size: $h3-size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 28px */
+/*     margin: auto; */
+    text-align: left;
+}
+
+h4 {
+    font-family: $h3-font;
+    font-size: $h4-size;
+    color: white;
+/*     text-align: center; */
+}
+
+ul {
+    list-style-image: url(../images/bullet1.svg);
+}
+
+li {
+    padding: .5em 0 1em 1em;
+    flex-direction: column;
+   align-self: flex-start;
+    gap: 5px;
+   flex: 1 0 0;
+
+
+}
+
+.deEmph {       
+    p {
+        color: $md-grey;
+        font-style: italic;
+    }
+    padding-top: .5em;
+}
+
+.subBullet {
+    li {
+        display: inline-block;
+        color: $md-grey;
+    }
+
+    p {
+        display: list-item;
+        padding-left: 1em;
+        margin-bottom: 0.25em;
+    }
+
+    p::marker {
+        content: url(../images/subBullet.svg);
+    }
+}
+
+.sB2 {
+    p{ 
+        display: inline-block;
+        padding-right: 1em;
+        margin-bottom: .25em;
+    }
+    p::before{
+        content: url(../images/subBullet.svg);
+        padding-right: 1em;
+    }
+    
+}
+
+.adjFs {
+    p {
+        color: $md-grey;
+    }
+}
+
+.line {
+    flex-grow: 1;
+    height: 0px;
+    border-style: solid;
+    border-color: #FFBB25;
+    border-width: 2px;
+}
+
+.h3Title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#greeting {
+    padding-top: $container-top-pad;
+}
+
+#gr1 {
+    p {
+        text-align: right;
+    }
+    
+    justify-self: right;
+    align-self: flex-start;
+}
+
+#gr2 {
+    align-self: center;
+}
+
+#gr3 {
+    align-self: flex-end;
+}
+
+#work {
+    padding-top: $container-top-pad;
+}
+
+.caseStudies {
+    img {
+        width: 80%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.triangleBreak {
+    padding-top: $container-top-pad;
+
+    .triBreakIcons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#about {
+    padding-top: $container-top-pad;
+
+    #photo {
+        img {
+            width: 100%;
+            height: auto;
+            align-self: center;
+        }
+    }
+    #break {
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    #skills {
+        background-image: url(../images/smoke.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 98% 90%;
+        #thurible {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            padding-right: 1.2em;
+        }
+    }
+}

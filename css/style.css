@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Newcomen";
+  src: url("../NewcomenRegular/font.woff") format("woff");
+}
+/* font-size:calc(12px + 1.5vw); */
+body {
+  background-color: black;
+  padding: 0px 75px 0px 75px;
+  font-family: "Iowan Old Style";
+  color: #D8D2C3;
+  font-size: 1em;
+}
+
+h1 {
+  color: #FFBB25;
+  font-family: "Mrs Saint Delafield";
+  font-size: 5.3vw;
+  font-style: normal;
+  font-weight: 400;
+  /*     line-height: 80%; /* 96px */
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: "Newcomen";
+  font-size: 2.7vw;
+  font-style: normal;
+  display: inline;
+  /*     line-height: 0%; */
+  overflow-wrap: break-word;
+}
+
+h3 {
+  color: #FFBB25;
+  font-family: "Bellefair";
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 28px */
+  /*     margin: auto; */
+  text-align: left;
+}
+
+h4 {
+  font-family: "Bellefair";
+  font-size: 1.9vw;
+  color: white;
+  /*     text-align: center; */
+}
+
+ul {
+  list-style-image: url(../images/bullet1.svg);
+}
+
+li {
+  padding: 0.5em 0 1em 1em;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 5px;
+  flex: 1 0 0;
+}
+
+.deEmph {
+  padding-top: 0.5em;
+}
+.deEmph p {
+  color: #AEAEAE;
+  font-style: italic;
+}
+
+.subBullet li {
+  display: inline-block;
+  color: #AEAEAE;
+}
+.subBullet p {
+  display: list-item;
+  padding-left: 1em;
+  margin-bottom: 0.25em;
+}
+.subBullet p::marker {
+  content: url(../images/subBullet.svg);
+}
+
+.sB2 p {
+  display: inline-block;
+  padding-right: 1em;
+  margin-bottom: 0.25em;
+}
+.sB2 p::before {
+  content: url(../images/subBullet.svg);
+  padding-right: 1em;
+}
+
+.adjFs p {
+  color: #AEAEAE;
+}
+
+.line {
+  flex-grow: 1;
+  height: 0px;
+  border-style: solid;
+  border-color: #FFBB25;
+  border-width: 2px;
+}
+
+.h3Title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#greeting {
+  padding-top: 5vh;
+}
+
+#gr1 {
+  justify-self: right;
+  align-self: flex-start;
+}
+#gr1 p {
+  text-align: right;
+}
+
+#gr2 {
+  align-self: center;
+}
+
+#gr3 {
+  align-self: flex-end;
+}
+
+#work {
+  padding-top: 5vh;
+}
+
+.caseStudies img {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.caseStudies p {
+  text-align: center;
+}
+
+.triangleBreak {
+  padding-top: 5vh;
+}
+.triangleBreak .triBreakIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about {
+  padding-top: 5vh;
+}
+#about #photo img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+#about #break img {
+  height: 100%;
+  width: auto;
+}
+#about #skills {
+  background-image: url(../images/smoke.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 98% 90%;
+}
+#about #skills #thurible {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding-right: 1.2em;
+}/*# sourceMappingURL=style.css.map */
