@@ -27,8 +27,10 @@ h2 {
   font-size: 2.7vw;
   font-style: normal;
   display: inline;
-  /*     line-height: 0%; */
+  /* line-height: 80%; */
   overflow-wrap: break-word;
+  align-self: center;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -61,6 +63,10 @@ li {
   flex: 1 0 0;
 }
 
+.mdMargin {
+  margin-top: 2vh;
+}
+
 .deEmph {
   padding-top: 0.5em;
 }
@@ -90,6 +96,7 @@ li {
 .sB2 p::before {
   content: url(../images/subBullet.svg);
   padding-right: 1em;
+  opacity: 70%;
 }
 
 .adjFs p {
@@ -150,10 +157,14 @@ li {
 .triangleBreak .triBreakIcons {
   display: flex;
   justify-content: space-between;
+  opacity: 40%;
 }
 
 #about {
   padding-top: 5vh;
+}
+#about #aboutContent {
+  margin-top: 2vh;
 }
 #about #photo img {
   width: 100%;
@@ -175,4 +186,52 @@ li {
   justify-content: center;
   gap: 1em;
   padding-right: 1.2em;
+}
+
+#break2 {
+  padding-top: 5vh;
+}
+#break2 .row {
+  opacity: 40%;
+}
+#break2 .row #tri1 {
+  rotate: 180deg;
+}
+#break2 .row img {
+  padding: 0;
+}
+#break2 .row .triangles img {
+  width: 80%;
+  height: auto;
+}
+#break2 .row #cuniText img {
+  rotate: 180deg;
+  width: 100%;
+  height: auto;
+}
+
+.contact {
+  padding-top: 5vh;
+}
+.contact #cText {
+  margin-top: 2vh;
+}
+.contact .fLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.contact .greyDash img {
+  width: 100%;
+  height: auto;
+}
+.contact .extIcon img {
+  height: 2vh;
+  width: auto;
+}
+.contact #cQuill {
+  height: 100%;
+  width: auto;
+  padding: 2vh;
 }/*# sourceMappingURL=style.css.map */

@@ -26,6 +26,7 @@ $sm-P-size: 0.9em;
 $img-fill: 100%;
 
 $container-top-pad: 5vh;
+$container-md-margin: 2vh;
 
 $link-hover-color: $md-grey;
 
@@ -55,8 +56,10 @@ h2 {
     font-size: $h2-size;
     font-style: normal;
     display: inline;
-/*     line-height: 0%; */
+    /* line-height: 80%; */
     overflow-wrap: break-word;
+    align-self: center;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -88,7 +91,10 @@ li {
     gap: 5px;
    flex: 1 0 0;
 
+}
 
+.mdMargin {
+    margin-top: $container-md-margin;
 }
 
 .deEmph {       
@@ -125,6 +131,7 @@ li {
     p::before{
         content: url(../images/subBullet.svg);
         padding-right: 1em;
+        opacity: 70%;
     }
     
 }
@@ -193,11 +200,16 @@ li {
     .triBreakIcons {
         display: flex;
         justify-content: space-between;
+        opacity: 40%;
     }
 }
 
 #about {
     padding-top: $container-top-pad;
+    
+    #aboutContent {
+        margin-top: $container-md-margin;
+    }
 
     #photo {
         img {
@@ -223,5 +235,62 @@ li {
             gap: 1em;
             padding-right: 1.2em;
         }
+    }
+}
+
+#break2 {
+    padding-top: $container-top-pad;
+    .row {
+        opacity: 40%;
+    
+        #tri1 {
+            rotate: 180deg;
+        }
+    
+        img {
+            padding: 0;
+        }
+
+        .triangles img {
+            width: 80%;
+            height: auto;
+        }
+
+        #cuniText img {
+            rotate: 180deg;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+.contact {
+    padding-top: $container-top-pad;
+    #cText {
+        margin-top: $container-md-margin;
+    }
+
+    .fLinks {
+        display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    }
+    
+    .greyDash img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .extIcon img {
+        height: 2vh;
+        width: auto;
+    }
+    
+    #cQuill {
+        height: 100%;
+        width: auto;
+        padding: 2vh;
     }
 }
