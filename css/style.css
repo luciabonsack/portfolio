@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: #D8D2C3;
   font-family: "Newcomen";
   font-size: 2.7vw;
   font-style: normal;
@@ -109,12 +109,17 @@ li {
   border-style: solid;
   border-color: #FFBB25;
   border-width: 2px;
+  opacity: 70%;
 }
 
 .h3Title {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.h3Title img {
+  height: 2.7vw;
+  width: auto;
 }
 
 #greeting {
@@ -230,8 +235,8 @@ li {
   height: 2vh;
   width: auto;
 }
-.contact #cQuill {
-  height: 100%;
-  width: auto;
-  padding: 2vh;
+.contact #cQuill img {
+  width: 100%;
+  height: auto;
+  padding: 1vh;
 }/*# sourceMappingURL=style.css.map */

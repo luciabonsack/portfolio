@@ -51,7 +51,7 @@ h1 {
     text-align: center;
 }
 h2 {
-    color: white;
+    color: $lt-smoke-grey;
     font-family: $display-font;
     font-size: $h2-size;
     font-style: normal;
@@ -148,12 +148,17 @@ li {
     border-style: solid;
     border-color: #FFBB25;
     border-width: 2px;
+    opacity: 70%;
 }
 
 .h3Title {
     display: flex;
     align-items: center;
     gap: 10px;
+    img {
+        height: $h2-size;
+        width: auto;
+    }
 }
 
 #greeting {
@@ -288,9 +293,9 @@ li {
         width: auto;
     }
     
-    #cQuill {
-        height: 100%;
-        width: auto;
-        padding: 2vh;
+    #cQuill img {
+        width: 100%;
+        height: auto;
+        padding: 1vh;
     }
 }
