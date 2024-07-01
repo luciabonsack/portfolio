@@ -153,11 +153,17 @@ li {
   margin-right: auto;
 }
 .caseStudies p {
-  text-align: center;
+  text-align: left;
+}
+.caseStudies ul {
+  margin: 0;
+}
+.caseStudies li {
+  padding-bottom: 0.5em;
 }
 
 .triangleBreak {
-  padding-top: 5vh;
+  /*     padding-top: $container-top-pad; */
 }
 .triangleBreak .triBreakIcons {
   display: flex;
@@ -167,6 +173,9 @@ li {
 
 #about {
   padding-top: 5vh;
+}
+#about #specAndPhoto {
+  margin-top: 2vh;
 }
 #about #aboutContent {
   margin-top: 2vh;
@@ -180,17 +189,33 @@ li {
   height: 100%;
   width: auto;
 }
-#about #skills {
-  background-image: url(../images/smoke.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 98% 90%;
+#about #skillsAndInterests {
+  margin-top: 2vh;
+  /*         background-image: url(../images/smoke.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 98% 90%; */
 }
-#about #skills #thurible {
+#about #skillsAndInterests #thurible {
   display: flex;
   justify-content: center;
   gap: 1em;
   padding-right: 1.2em;
+}
+#about #skillsAndInterests #thurible img {
+  width: 15%;
+  height: auto;
+}
+#about #skillsAndInterests #smoke {
+  max-height: 600px;
+}
+#about #skillsAndInterests #smoke #smokeImageThis {
+  background-image: url(../images/smoke.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 99%;
+  height: 53vh;
+  opacity: 60%;
 }
 
 #break2 {

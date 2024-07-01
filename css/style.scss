@@ -192,16 +192,21 @@ li {
         height:auto;
         margin-left: auto;
         margin-right: auto;
-    
     }
 
     p {
-        text-align: center;
+        text-align: left;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+       padding-bottom: 0.5em; 
     }
 }
 
 .triangleBreak {
-    padding-top: $container-top-pad;
+/*     padding-top: $container-top-pad; */
 
     .triBreakIcons {
         display: flex;
@@ -213,6 +218,10 @@ li {
 #about {
     padding-top: $container-top-pad;
     
+    #specAndPhoto {
+        margin-top: $container-md-margin;
+    }
+
     #aboutContent {
         margin-top: $container-md-margin;
     }
@@ -230,17 +239,35 @@ li {
             width: auto;
         }
     }
-    #skills {
-        background-image: url(../images/smoke.svg);
+    #skillsAndInterests {
+        margin-top: $container-md-margin;
+/*         background-image: url(../images/smoke.svg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 98% 90%;
+        background-size: 98% 90%; */
         #thurible {
             display: flex;
             justify-content: center;
             gap: 1em;
             padding-right: 1.2em;
+            img {
+                width: 15%;
+                height: auto;
+            }
         }
+        #smoke {
+            max-height: 600px;
+            #smokeImageThis {
+                background-image: url(../images/smoke.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 99%;
+                height: 53vh;
+                opacity: 60%;
+                }
+
+        }
+
     }
 }
 
