@@ -195,7 +195,7 @@ li {
     }
 
     p {
-        text-align: center;
+        text-align: left;
     }
     ul {
         margin: 0;
@@ -224,6 +224,15 @@ li {
 
     #aboutContent {
         margin-top: $container-md-margin;
+    }
+
+    #specAni {
+        object {
+            width: 85%;
+            height:auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     #photo {
