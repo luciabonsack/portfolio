@@ -161,6 +161,78 @@ li {
     }
 }
 
+@mixin my-grid {
+    $grid-gutter-width: 16px;
+    $bs-gutter-x: 0;
+    }
+
+    .myNav {
+        @include my-grid;
+        padding-top: 2vh;
+        flex-direction: row;
+
+        li {
+            flex:none;
+        }
+
+        .nav {
+            border-bottom-color: black;
+        }
+    }
+
+    .myButton {
+        font-family: $h3-font;
+        background-color: $tangerine;
+        color: $dk-smoke-grey;
+        border-color: $lt-smoke-grey;
+    }
+    
+    @mixin my-tab {
+        font-family: $h3-font;
+        font-size: $h5-size;
+        color: $dk-smoke-grey;
+    }
+
+    .myNav a {
+     @include my-tab();
+     font-size: $nav-size;
+
+    }
+    
+    .myNav a:active {
+        color: $md-grey;
+    }
+    
+    .myButton:hover {
+        background-color: $dk-smoke-grey;
+        color: $lt-smoke-grey;
+        border-color: $tangerine;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #495057;
+        background-color: $lt-smoke-grey;
+        opacity: 60%;
+        border-color: $lt-smoke-grey $lt-smoke-grey $lt-smoke-grey;
+    }
+    
+    .myNav a:hover {
+        color: $dk-smoke-grey;
+        background-color: $tangerine;
+    }
+
+    .myCardSmol {
+        background-color: $dk-smoke-grey;
+    }
+    
+    .myDropdownItem a {
+        color: $dk-smoke-grey;
+    }
+    
+    .myDropdownItem a:hover {
+        background-color: $tangerine;
+    }
+
 #greeting {
     padding-top: $container-top-pad;
 }
@@ -212,6 +284,15 @@ li {
         display: flex;
         justify-content: space-between;
         opacity: 40%;
+        gap: 1em;
+        img {
+            width: 33%;
+            height: auto;
+        }
+        object {
+            width: 33%;
+            height: auto;
+        }
     }
 }
 
@@ -262,16 +343,15 @@ li {
             }
         }
         #smoke {
-            max-height: 600px;
+            /* max-height: 600px; */
             #smokeImageThis {
-                background-image: url(../images/smoke.svg);
+                /* background-image: url(../images/smoke.svg);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: 100% 99%;
                 height: 53vh;
-                opacity: 60%;
+                opacity: 60%; */
                 }
-
         }
 
         .myAccordion {
@@ -289,17 +369,22 @@ li {
                 background-color: black;
                 border-color: $dk-smoke-grey; 
             }
-        }
-        
 
+            .accordion-item {
+                border: none;
+            }
+        }
         
         .myAccordion button img {
             color: $dk-smoke-grey;
         }
         
         .accordion-button:not(.collapsed) {
-            color: black;
-            background-color: $lt-smoke-grey;
+            color: white;
+            background-image: url(../images/smoke.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #222222;
             box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 
         }
@@ -328,6 +413,10 @@ li {
             transition: transform .2s ease-in-out;
         }
 
+        #interests ul {
+            max-height: 20vh;
+            overflow: scroll;
+        }
 
     }
 }
@@ -351,8 +440,8 @@ li {
         }
 
         #cuniText img {
-            rotate: 180deg;
-            width: 100%;
+            /* rotate: 180deg; */
+            width: 40%;
             height: auto;
         }
     }

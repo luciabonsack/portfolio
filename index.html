@@ -20,13 +20,31 @@
 <body>
 <!--Content-->
 <div class="content">
-
-    <div class="btn-group" id="buttonAlign" role="group" aria-label="Basic outlined example">
-        <button type="button" class="btn btn-outline-primary myButton" id="fSmol">Bigger text</button>
-        <button type="button" class="btn btn-outline-primary myButton" id="fBright">Brighter text</button>
-        <button type="button" class="btn btn-outline-primary myButton" id="fBright">Home</button>
-        <button type="button" class="btn btn-outline-primary myButton" id="fBright">Contact</button>
-      </div>
+        <!-- Nav from bootstrap-->
+        <div class="container myNav">
+            <ul class="nav nav-tabs justify-content-end">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="...">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Case studies</a>
+                <ul class="dropdown-menu myDropdownItem">
+                    <li><a class="dropdown-item" href="#">Mobile travel app</a></li>
+                    <li><a class="dropdown-item" href="#">Bathroom finder app</a></li>
+                    <li><a class="dropdown-item" href="#">Non-profit RWD site redesign</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
+                    <ul class="dropdown-menu myDropdownItem">
+                        <li><a class="dropdown-item" href="#">Larger font</a></li>
+                        <li><a class="dropdown-item" href="#">Brighter font</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                    </li>
+            </ul>
+        </div>
 
     <div class="container" id="greeting">
         <div class="row">
@@ -36,7 +54,7 @@
             <div class="col-5" id="gr2">
                 <!-- <h1>Lucia A. Bonsack</h1> -->
                 <object type="image/svg+xml" data="images/signatur.svg">
-                    <img class="img-fluid" alt="Lucia A. Bonsack" src="images/MobileTravel.svg">
+                    <img class="img-fluid" alt="Lucia A. Bonsack" src="images/signatur.svg">
                 </object> 
             </div>     
             <div class="col-6" id="gr3">
@@ -74,40 +92,21 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-8 caseStudies csText csTextHide" id="txt11">
-                <ul>
-                    <li>Travel planning app design</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-8 offset-md-4 caseStudies csText csTextHide" id="txt22">
-                <ul>
-                    <li>
-                        Bathroom search / filter app design
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4 offset-md-8 caseStudies csText csTextHide" id="txt33">
-                <ul>
-                    <li>
-                        Non-profit site RWD redesign
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
 
     <div class="container triangleBreak">
         <div class="row">
             <div class="col-5"></div>
                 <div class="col-2 triBreakIcons">
-                    <img src="images/triangleDown.svg">
-                    <img src="images/triangleDown.svg">
-                    <img src="images/triangleDown.svg">
+                    <object type="image/svg+xml" data="images/triangleDownA.svg">
+                        <img class="img-fluid" alt="animated icon to direct users to scroll down" src="images/triangleDownA.svg">
+                    </object>
+                    <object type="image/svg+xml" data="images/triangleDownA.svg">
+                        <img class="img-fluid" alt="animated icon to direct users to scroll down" src="images/triangleDownA.svg">
+                    </object>
+                    <object type="image/svg+xml" data="images/triangleDownA.svg">
+                        <img class="img-fluid" alt="animated icon to direct users to scroll down" src="images/triangleDownA.svg">
+                    </object>
                 </div>
             <div class="col-5"></div>
         </div>
@@ -176,7 +175,7 @@
             </div>
 
             <div class="row align-items-end" id="skillsAndInterests">
-                <div class="col-4 subBullet" id="interests">
+                <div class="col-7 subBullet" id="interests">
                     <h3>Interests and inspiration</h3>
                     <ul>
                         <li><p>Ancient history</p>
@@ -192,13 +191,7 @@
 
                     </ul>
                 </div>
-                <div class="col-3" id="smoke">
-                    <div id="smokeImageThis"></div>   
-                    <div id="thurible">
-                            <img src="images/match.svg">
-                            <img src="images/thurible.svg">
-                        </div>
-                </div>
+
                 <div class="col-4" id="skills">
                     <div id="skillsTitle">
                         <h3>Skills</h3><div id="skillsLine"></div>
@@ -291,7 +284,7 @@
             </div>
             <div class="col-1"></div>
             <div class="col-2 breakStar" id="cuniText">
-                <img src="images/Fake-text.svg">
+                <img src="images/thurible.svg">
             </div>
             <div class="col-1"></div>
             <div class="col-1 breakStar" id="st2">

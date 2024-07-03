@@ -122,6 +122,65 @@ li {
   width: auto;
 }
 
+.myNav {
+  padding-top: 2vh;
+  flex-direction: row;
+}
+.myNav li {
+  flex: none;
+}
+.myNav .nav {
+  border-bottom-color: black;
+}
+
+.myButton {
+  font-family: "Bellefair";
+  background-color: #FFBB25;
+  color: #55534C;
+  border-color: #D8D2C3;
+}
+
+.myNav a {
+  font-family: "Bellefair";
+  font-size: 2vw;
+  color: #55534C;
+  font-size: 1.3em;
+}
+
+.myNav a:active {
+  color: #AEAEAE;
+}
+
+.myButton:hover {
+  background-color: #55534C;
+  color: #D8D2C3;
+  border-color: #FFBB25;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #D8D2C3;
+  opacity: 60%;
+  border-color: #D8D2C3 #D8D2C3 #D8D2C3;
+}
+
+.myNav a:hover {
+  color: #55534C;
+  background-color: #FFBB25;
+}
+
+.myCardSmol {
+  background-color: #55534C;
+}
+
+.myDropdownItem a {
+  color: #55534C;
+}
+
+.myDropdownItem a:hover {
+  background-color: #FFBB25;
+}
+
 #greeting {
   padding-top: 5vh;
 }
@@ -169,6 +228,15 @@ li {
   display: flex;
   justify-content: space-between;
   opacity: 40%;
+  gap: 1em;
+}
+.triangleBreak .triBreakIcons img {
+  width: 33%;
+  height: auto;
+}
+.triangleBreak .triBreakIcons object {
+  width: 33%;
+  height: auto;
 }
 
 #about {
@@ -209,15 +277,15 @@ li {
   height: auto;
 }
 #about #skillsAndInterests #smoke {
-  max-height: 600px;
+  /* max-height: 600px; */
 }
 #about #skillsAndInterests #smoke #smokeImageThis {
-  background-image: url(../images/smoke.svg);
+  /* background-image: url(../images/smoke.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 99%;
   height: 53vh;
-  opacity: 60%;
+  opacity: 60%; */
 }
 #about #skillsAndInterests .myAccordion {
   margin-top: 1em;
@@ -233,12 +301,18 @@ li {
   background-color: black;
   border-color: #55534C;
 }
+#about #skillsAndInterests .myAccordion .accordion-item {
+  border: none;
+}
 #about #skillsAndInterests .myAccordion button img {
   color: #55534C;
 }
 #about #skillsAndInterests .accordion-button:not(.collapsed) {
-  color: black;
-  background-color: #D8D2C3;
+  color: white;
+  background-image: url(../images/smoke.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222222;
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 #about #skillsAndInterests .accordion-button:not(.collapsed)::after {
@@ -263,6 +337,10 @@ li {
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
 }
+#about #skillsAndInterests #interests ul {
+  max-height: 20vh;
+  overflow: scroll;
+}
 
 #break2 {
   padding-top: 5vh;
@@ -281,8 +359,8 @@ li {
   height: auto;
 }
 #break2 .row #cuniText img {
-  rotate: 180deg;
-  width: 100%;
+  /* rotate: 180deg; */
+  width: 40%;
   height: auto;
 }
 
