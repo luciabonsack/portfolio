@@ -62,6 +62,8 @@ h2 {
     margin-bottom: 0;
 }
 
+
+
 h3 {
     color: $tangerine;
     font-family: $h3-font;
@@ -80,12 +82,24 @@ h4 {
 /*     text-align: center; */
 }
 
+@media screen and (min-width: 1600px) {
+    h2 {
+       font-size: 40px;
+    }
+    h3 {
+      font-size: 32px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+  }
+
 ul {
     list-style-image: url(../images/bullet1.svg);
 }
 
 li {
-    padding: .5em 0 1em 1em;
+    padding: .5em 0 .25em 1em;
     flex-direction: column;
    align-self: flex-start;
     gap: 5px;
@@ -234,7 +248,7 @@ li {
     }
 
 #greeting {
-    padding-top: $container-top-pad;
+    padding-top: $container-md-margin;
 }
 
 #gr1 {
@@ -259,8 +273,16 @@ li {
 }
 
 .caseStudies {
+    margin-top: $container-md-margin;
     object {
-        width: 40%;
+        width: 70%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        width: 70%;
         height:auto;
         margin-left: auto;
         margin-right: auto;
@@ -309,7 +331,7 @@ li {
 
     #specAni {
         object {
-            width: 85%;
+            width: 70%;
             height:auto;
             margin-left: auto;
             margin-right: auto;
@@ -324,7 +346,10 @@ li {
         }
     }
     #break {
+        position: relative;
+        justify-content: center;
         img {
+            position: absolute;
             height: 100%;
             width: auto;
         }

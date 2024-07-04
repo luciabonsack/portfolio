@@ -51,12 +51,23 @@ h4 {
   /*     text-align: center; */
 }
 
+@media screen and (min-width: 1600px) {
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+}
 ul {
   list-style-image: url(../images/bullet1.svg);
 }
 
 li {
-  padding: 0.5em 0 1em 1em;
+  padding: 0.5em 0 0.25em 1em;
   flex-direction: column;
   align-self: flex-start;
   gap: 5px;
@@ -182,7 +193,7 @@ li {
 }
 
 #greeting {
-  padding-top: 5vh;
+  padding-top: 2vh;
 }
 
 #gr1 {
@@ -205,8 +216,17 @@ li {
   padding-top: 5vh;
 }
 
+.caseStudies {
+  margin-top: 2vh;
+}
 .caseStudies object {
-  width: 40%;
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.caseStudies img {
+  width: 70%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -249,7 +269,7 @@ li {
   margin-top: 2vh;
 }
 #about #specAni object {
-  width: 85%;
+  width: 70%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -259,7 +279,12 @@ li {
   height: auto;
   align-self: center;
 }
+#about #break {
+  position: relative;
+  justify-content: center;
+}
 #about #break img {
+  position: absolute;
   height: 100%;
   width: auto;
 }
