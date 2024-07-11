@@ -194,57 +194,91 @@ li {
         }
     }
 
-    .myButton {
+.myButton {
         font-family: $h3-font;
         background-color: $tangerine;
         color: $dk-smoke-grey;
         border-color: $lt-smoke-grey;
     }
     
-    @mixin my-tab {
+@mixin my-tab {
         font-family: $h3-font;
         font-size: $h5-size;
         color: $dk-smoke-grey;
     }
 
-    .myNav a {
+.myNav a {
      @include my-tab();
      font-size: $nav-size;
 
     }
     
-    .myNav a:active {
+.myNav a:active {
         color: $md-grey;
     }
     
-    .myButton:hover {
+.myButton:hover {
         background-color: $dk-smoke-grey;
         color: $lt-smoke-grey;
         border-color: $tangerine;
     }
 
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
         color: #495057;
         background-color: $lt-smoke-grey;
         opacity: 60%;
         border-color: $lt-smoke-grey $lt-smoke-grey $lt-smoke-grey;
     }
     
-    .myNav a:hover {
+.myNav a:hover {
         color: $dk-smoke-grey;
         background-color: $tangerine;
     }
 
-    .myCardSmol {
+.myCardSmol {
         background-color: $dk-smoke-grey;
     }
     
-    .myDropdownItem a {
+.myDropdownItem a {
         color: $dk-smoke-grey;
     }
     
-    .myDropdownItem a:hover {
+.myDropdownItem a:hover {
         background-color: $tangerine;
+    }
+
+.nearEmphasis {
+        display: inline;
+    }
+    
+.emphasis {
+        color: $tangerine;
+    /*     font-weight: bold; */
+        display: inline;
+    }
+    
+.infoIcon {
+        display: inline;
+        height: calc($p-size * 1.3);
+        padding-right: .5em;
+    }
+    
+.myAccordion {
+        margin-top: $p-size;
+
+    button {
+        background-color: $lt-smoke-grey;
+        color: black;
+        img {
+            color: $dk-smoke-grey;
+        }
+    }
+    
+}
+    
+    
+    .myGridSection {
+        align-items: center;
     }
 
 #greeting {
@@ -318,6 +352,65 @@ li {
     }
 }
 
+.myAccordion {
+    margin-top: $p-size;
+    
+    h4 button {
+        font-size: $h4-size;
+    }
+    .accordion-body {
+        background-color: black;
+    }
+
+    button {
+        color: white;
+        background-color: black;
+        border-color: $dk-smoke-grey; 
+        img {
+            color: $dk-smoke-grey;
+        }
+    }
+
+    .accordion-item {
+        border: none;
+    }
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-image: url(../images/smoke.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #222222;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+
+}
+.accordion-button:not(.collapsed)::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/eyeconOpen.svg);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/eyeClosed.svg);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
 #about {
     padding-top: $container-top-pad;
     
@@ -379,64 +472,6 @@ li {
                 }
         }
 
-        .myAccordion {
-            margin-top: $p-size;
-            
-            h4 button {
-                font-size: $h4-size;
-            }
-            .accordion-body {
-                background-color: black;
-            }
-
-            button {
-                color: white;
-                background-color: black;
-                border-color: $dk-smoke-grey; 
-            }
-
-            .accordion-item {
-                border: none;
-            }
-        }
-        
-        .myAccordion button img {
-            color: $dk-smoke-grey;
-        }
-        
-        .accordion-button:not(.collapsed) {
-            color: white;
-            background-image: url(../images/smoke.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: #222222;
-            box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
-
-        }
-        .accordion-button:not(.collapsed)::after {
-            flex-shrink: 0;
-            width: 1.25rem;
-            height: 1.25rem;
-            margin-left: auto;
-            content: "";
-            background-image: url(../images/eyeconOpen.svg);
-            background-repeat: no-repeat;
-            background-size: 1.25rem;
-            transition: transform .2s ease-in-out;
-        }
-
-
-        .accordion-button::after {
-            flex-shrink: 0;
-            width: 1.25rem;
-            height: 1.25rem;
-            margin-left: auto;
-            content: "";
-            background-image: url(../images/eyeClosed.svg);
-            background-repeat: no-repeat;
-            background-size: 1.25rem;
-            transition: transform .2s ease-in-out;
-        }
 
         #interests ul {
             max-height: 20vh;
@@ -473,6 +508,66 @@ li {
 
 }
 
+/* CS1 hero block  */
+#summaryBlock{
+    padding-top: $container-top-pad;
+}
+/* Tabs  */
+.realMyTab {
+    font-family: $display-font;
+    font-size: $h4-size;
+    color: $tangerine;
+}
+
+.realMyTab button {
+    color: $tangerine;
+}
+
+.myImage img {
+    width: $img-fill;
+    padding: 3em;
+}
+
+.myImageSmol img {
+    width: 60%;
+    height: auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shiftOpacity {
+    opacity: 60%;
+}
+
+.subSection {
+    padding-top: $container-top-pad;
+}
+
+
+    .myImage2 img {
+        width: $img-fill;
+        height: auto;
+        padding: .5em;
+    }
+
+
+#testingTitle {
+    img {
+        rotate: 180deg;
+    }
+}
+
+#prototyping {
+    .myImage img {
+        padding-top: 0;
+    }
+}
+
+/* Footer */
 .contact {
     padding-top: $container-top-pad;
     #cText {

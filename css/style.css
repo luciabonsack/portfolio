@@ -192,6 +192,37 @@ li {
   background-color: #FFBB25;
 }
 
+.nearEmphasis {
+  display: inline;
+}
+
+.emphasis {
+  color: #FFBB25;
+  /*     font-weight: bold; */
+  display: inline;
+}
+
+.infoIcon {
+  display: inline;
+  height: 1.3em;
+  padding-right: 0.5em;
+}
+
+.myAccordion {
+  margin-top: 1em;
+}
+.myAccordion button {
+  background-color: #D8D2C3;
+  color: black;
+}
+.myAccordion button img {
+  color: #55534C;
+}
+
+.myGridSection {
+  align-items: center;
+}
+
 #greeting {
   padding-top: 2vh;
 }
@@ -259,6 +290,60 @@ li {
   height: auto;
 }
 
+.myAccordion {
+  margin-top: 1em;
+}
+.myAccordion h4 button {
+  font-size: 1.9vw;
+}
+.myAccordion .accordion-body {
+  background-color: black;
+}
+.myAccordion button {
+  color: white;
+  background-color: black;
+  border-color: #55534C;
+}
+.myAccordion button img {
+  color: #55534C;
+}
+.myAccordion .accordion-item {
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-image: url(../images/smoke.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222222;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url(../images/eyeconOpen.svg);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url(../images/eyeClosed.svg);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
 #about {
   padding-top: 5vh;
 }
@@ -312,56 +397,6 @@ li {
   height: 53vh;
   opacity: 60%; */
 }
-#about #skillsAndInterests .myAccordion {
-  margin-top: 1em;
-}
-#about #skillsAndInterests .myAccordion h4 button {
-  font-size: 1.9vw;
-}
-#about #skillsAndInterests .myAccordion .accordion-body {
-  background-color: black;
-}
-#about #skillsAndInterests .myAccordion button {
-  color: white;
-  background-color: black;
-  border-color: #55534C;
-}
-#about #skillsAndInterests .myAccordion .accordion-item {
-  border: none;
-}
-#about #skillsAndInterests .myAccordion button img {
-  color: #55534C;
-}
-#about #skillsAndInterests .accordion-button:not(.collapsed) {
-  color: white;
-  background-image: url(../images/smoke.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #222222;
-  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
-}
-#about #skillsAndInterests .accordion-button:not(.collapsed)::after {
-  flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-left: auto;
-  content: "";
-  background-image: url(../images/eyeconOpen.svg);
-  background-repeat: no-repeat;
-  background-size: 1.25rem;
-  transition: transform 0.2s ease-in-out;
-}
-#about #skillsAndInterests .accordion-button::after {
-  flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-left: auto;
-  content: "";
-  background-image: url(../images/eyeClosed.svg);
-  background-repeat: no-repeat;
-  background-size: 1.25rem;
-  transition: transform 0.2s ease-in-out;
-}
 #about #skillsAndInterests #interests ul {
   max-height: 20vh;
   overflow: scroll;
@@ -389,6 +424,61 @@ li {
   height: auto;
 }
 
+/* CS1 hero block  */
+#summaryBlock {
+  padding-top: 5vh;
+}
+
+/* Tabs  */
+.realMyTab {
+  font-family: "Newcomen";
+  font-size: 1.9vw;
+  color: #FFBB25;
+}
+
+.realMyTab button {
+  color: #FFBB25;
+}
+
+.myImage img {
+  width: 100%;
+  padding: 3em;
+}
+
+.myImageSmol img {
+  width: 60%;
+  height: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shiftOpacity {
+  opacity: 60%;
+}
+
+.subSection {
+  padding-top: 5vh;
+}
+
+.myImage2 img {
+  width: 100%;
+  height: auto;
+  padding: 0.5em;
+}
+
+#testingTitle img {
+  rotate: 180deg;
+}
+
+#prototyping .myImage img {
+  padding-top: 0;
+}
+
+/* Footer */
 .contact {
   padding-top: 5vh;
 }
